@@ -1,0 +1,159 @@
+canvas {
+  background-image: 
+  url('https://hackercar.com/wp-content/uploads/2019/09/range-rover-evoque-en-promoci%C3%B3n.jpg');
+  background-size: cover;
+  box-shadow: 0 0 4em 0 rgba(0, 0, 0, .6);
+}
+
+.tick-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 11em;
+  height: 2.6em;
+  bottom: 2em;
+  border-radius: .8em;
+  border-style: none;
+  background-color: #FFF;
+  cursor: pointer;
+}
+
+.tick-btn p {
+  color: #000;
+  font-size: .6em;
+  text-align: center;
+  padding: 1.4em 1em;
+}
+
+.tick-circle {
+  width: 1.3em;
+  height: 1.3em;
+  border: 3px solid #F2A000;
+  border-radius: 50%;
+}
+
+.ok-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 2.3em;
+  height: 2.3em;
+  right: 6em;
+  bottom: 2em;
+  border-style: none;
+  background-color: #44D7B6;
+  border-radius: 50%;
+}
+
+svg {
+  width: 1.4em;
+}
+
+.colors-menu-container {
+  display: flex;
+  position: absolute;
+}
+
+.colors-menu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 10;
+  width: 150px;
+  height: 110px;
+  border-radius: .5em;
+  background-color: #FFF;
+}
+
+.colors-menu-bulletpoint {
+  position: absolute;
+  clip-path: polygon(100% 0, 40% 50%, 100% 100%);
+  top: 45px;
+  left: -15px;
+  width: 15px;
+  height: 15px;
+  background-color: #FFF;
+}
+
+.colors-menu p {
+  color: #000;
+  font-size: .6em;
+  font-weight: bold;
+  text-align: center;
+  padding: 1.4em 1em;
+}
+
+.colors-close-btn {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 200;
+  width: 1.3em;
+  height: 1.3em;
+  border-radius: 50%;
+  border: 1.4px solid;
+  background-color: #FFF;
+  cursor: pointer;
+}
+
+.colors-btn-cross {
+  width: 7px;
+  height: 7px;
+  background-color: #F73457;
+  clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.color-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: .2em .6em .7em;
+  width: 100%;
+  height: 100%;
+}
+
+.color {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: .2em;
+  transition: .5s ease-in;
+  border-radius: 50%;
+}
+
+.filled-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.2em;
+  height: 1.2em;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.filled-circle::after {
+  content: '';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: .8em;
+  height: .8em;
+  border-radius: 50%;
+  border: 1.7px solid rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.stroke-circle {
+  width: 1.1em;
+  height: 1.1em;
+  border-radius: 50%;
+  border: 1.5px solid rgba(255, 255, 255, 0);
+}
+
+.stroke-circle:hover {
+  border: 1.5px solid rgb(255, 255, 255);
+}
