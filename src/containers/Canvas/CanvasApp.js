@@ -7,6 +7,7 @@ const CanvasApp = () => {
   return (
     <>
       <Canvas />
+      <Prueba />
     </>
   );
 }
