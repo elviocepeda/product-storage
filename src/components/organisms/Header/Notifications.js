@@ -13,8 +13,8 @@ const Notifications = () => {
 
   return (
     <div style={style}>
-      <Lamp color='#4c7a94' />
-      <Bell color='#4c7a94' />
+      <Lamp color='#4c7a94' marginLeft='1em' />
+      <Bell color='#4c7a94' marginLeft='1em' />
     </div>
   )
 };

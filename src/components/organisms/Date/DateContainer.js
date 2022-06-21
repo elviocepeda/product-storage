@@ -1,5 +1,4 @@
 import React from 'react';
-import Title from '../../atoms/Title';
 import Calendar from './Calendar';
 
 const DateContainer = () => {
@@ -7,7 +6,7 @@ const DateContainer = () => {
 
   return (
     <div>
-      <Title title='SABADO 11 DE MAYO, 2022' />
+      <h4>SABADO 11 DE MAYO, 2022</h4>
       <Calendar />
     </div>
   )

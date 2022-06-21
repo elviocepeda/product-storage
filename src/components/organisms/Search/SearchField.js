@@ -1,12 +1,10 @@
 import React from 'react';
 import SearchGlass from '../../../icons/SearchGlass';
-import Input from '../../atoms/Input';
 
 const SearchField = () => {
 
   const style = {
     display: 'flex',
-    justifyContent: 'flexStart',
     width: '100%',
     height: '3em',
     alignItems: 'center',
@@ -14,10 +12,23 @@ const SearchField = () => {
     boxShadow: 'inset 0 0 5px rgba(0, 0, 0, 0.3)'
   }
 
+  const inputStyle = {
+    width: '80%',
+    height: '2.5em',
+    outline: 'none',
+    borderStyle: 'none',
+    borderRadius: '.5em',
+  }
+
   return (
     <div style={style}>
       <SearchGlass />
-      <Input type='text'/>
+      <input
+        style={inputStyle}
+        type='text'
+        placeholder='Buscar...'
+      >
+      </input>
     </div>
   )
 }

@@ -3,9 +3,8 @@ import Alarm from '../../../icons/Alarm';
 import Bolt from '../../../icons/Bolt';
 import Stats from '../../../icons/Stats';
 import Tag from '../../../icons/Tag';
-import Paragraph from '../../atoms/Paragraph';
 
-const MenuItem = ({svg, label}) => {
+const MenuItem = ({ svg, label }) => {
 
   const style = {
     display: 'flex',
@@ -21,11 +20,35 @@ const MenuItem = ({svg, label}) => {
 
   return (
     <div style={style}>
-      {svg === 'tag' && <><Tag /><Paragraph title='Productos' /></>}
-      {svg === 'alarm' && <><Alarm /><Paragraph title='Alarma' /></>}
-      {svg === 'bolt' && <><Bolt /><Paragraph title='Bolt' /></>}
-      {svg === 'stats' && <><Stats /><Paragraph title='Stats' /></>}
-      
+      {
+        svg === 'tag' &&
+        <>
+          <Tag />
+          <h4>Productos</h4>
+        </>
+      }
+      {
+        svg === 'alarm' &&
+        <>
+          <Alarm />
+          <h4>Alarma</h4>
+        </>
+      }
+      {
+        svg === 'bolt' &&
+        <>
+          <Bolt />
+          <h4>Bolt</h4>
+        </>
+      }
+      {
+        svg === 'stats' &&
+        <>
+          <Stats />
+          <h4>Stats</h4>
+        </>
+      }
+
     </div>
   )
 };

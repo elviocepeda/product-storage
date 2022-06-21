@@ -1,12 +1,12 @@
 import React from 'react';
 
-const Bell = ({color}) => {
+const Bell = ({color, marginLeft}) => {
 
   const style = {
     width: '1.4em',
     height: '1.4em',
     fill: `${color}`,
-    marginLeft: '.3em'
+    marginLeft: `${marginLeft}`
   };
 
   return (
