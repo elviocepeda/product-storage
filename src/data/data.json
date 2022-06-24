@@ -1,76 +1,15 @@
 {
-  "store": {
-    "tshirts": [
-      {
-        "title": "Remera",
-        "waist": "14",
-        "price": "0",
-        "category": "tshirts",
-        "given": false,
-        "uploaded": 1654467296785
-      }
-    ],
-    "sweatshirts": [
-      {
-        "title": "Buzo",
-        "waist": "14",
-        "price": "0",
-        "category": "sweatshirts",
-        "given": false,
-        "uploaded": 1654467296786
-      }
-    ],
-    "jackets": [
-      {
-        "title": "Campera",
-        "waist": "14",
-        "price": "0",
-        "category": "jackets",
-        "given": false,
-        "uploaded": 1654467296787
-      }
-    ],
-    "joggins": [
-      {
-        "title": "Joggin",
-        "waist": "14",
-        "price": "0",
-        "category": "joggins",
-        "given": false,
-        "uploaded": 1654467296788
-      }
-    ],
-    "jeans": [
-      {
-        "title": "Jean",
-        "waist": "14",
-        "price": "0",
-        "category": "jeans",
-        "given": false,
-        "uploaded": 1654467296789
-      }
-    ],
-    "swimsuits": [
-      {
-        "title": "Mallas",
-        "waist": "14",
-        "price": "0",
-        "category": "swimsuits",
-        "given": false,
-        "uploaded": 1654467296790
-      }
-    ],
-    "dresses": [
-      {
-        "title": "Vestidos",
-        "waist": "14",
-        "price": "0",
-        "category": "dresses",
-        "given": false,
-        "uploaded": 1654467296791
-      }
-    ]
-  },
+  "store": [
+    {
+      "title": "RETRO",
+      "waist": "10",
+      "price": "1500",
+      "category": "jackets",
+      "id": 1655957421469,
+      "given": false,
+      "uploaded": "2022-06-23T04:10:21.469Z"
+    }
+  ],
   "customers": [
     {
       "name": "Elvio",

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Checked from '../../icons/Checked';
 import Cross from '../../icons/Cross';
-import './Form.css'
+import './Form.css';
 
 const initForm = {
   title: '',
@@ -12,25 +12,22 @@ const initForm = {
 
 const Form = ({ addData, showForm, setShowForm, blob }) => {
 
-  const [isSending, setIsSending] = useState(false)
-  const [form, setForm] = useState(initForm)
+  const [form, setForm] = useState(initForm);
 
   const handleFormCancel = () => {
-    setShowForm(false)
-    setIsSending(false)
-  }
+    setShowForm(false);
+  };
 
   const handleChange = (e) => {
     setForm({
       ...form,
       [e.target.name]: e.target.value
-    })
-  }
+    });
+  };
 
   const handleSubmit = (e) => {
-    addData(form)
-    e.preventDefault()
-    setIsSending(true)
+    e.preventDefault();
+    addData(form);
   }
 
   return (
@@ -117,10 +114,6 @@ const Form = ({ addData, showForm, setShowForm, blob }) => {
             </div>
           </div>
         </form>
-      }
-      {
-        isSending &&
-        <h4>Enviando datos...</h4>
       }
     </>
   )

@@ -1,13 +1,13 @@
-import './App.css';
-import AppRouter from './containers/routers/Router';
+import "./App.css";
+import AppRouter from "./containers/routers/Router";
+import StoreProvider from "./store/StoreProvider";
 
 function App() {
   return (
     <div className="App">
-      <AppRouter />
-      {/* <Home /> */}
-      {/* <Canvas /> */}
-      {/* <Prueba /> */}
+      <StoreProvider>
+        <AppRouter />
+      </StoreProvider>
     </div>
   );
 }
